@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="40" height="40" tilewidth="16" tileheight="16">
+ <tileset firstgid="1" name="generic_platformer_tiles" tilewidth="16" tileheight="16">
+  <image source="../tiles/generic_platformer_tiles.png" width="1024" height="768"/>
+  <terraintypes>
+   <terrain name="Sand" tile="112"/>
+   <terrain name="Empty" tile="246"/>
+  </terraintypes>
+  <tile id="44" terrain="1,1,1,0">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="45" terrain="1,1,0,0">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="46" terrain="1,1,0,0">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="47" terrain="1,1,0,0">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="48" terrain="1,1,0,0">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="49" terrain="1,1,0,0">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="50" terrain="1,1,0,0">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="51" terrain="1,1,0,0">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="52" terrain="1,1,0,0">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="53" terrain="1,1,0,0">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="54" terrain="1,1,0,0">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="55" terrain="1,1,0,1">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="108" terrain="1,0,1,1">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="109" terrain="0,0,1,1">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="110" terrain="0,0,1,0">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="111" terrain="0,0,0,0">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="112" terrain="0,0,0,0">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="113" terrain="0,0,0,0">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="114" terrain="0,0,0,0">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="115" terrain="0,0,0,0">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="116" terrain="0,0,0,0">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="117" terrain="0,0,0,1">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="118" terrain="0,0,1,1">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="119" terrain="0,1,1,1">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="171">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="172">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="173">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="174" terrain="1,0,1,0">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="175" terrain="0,0,0,0">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="176" terrain="0,0,0,0">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="177" terrain="0,0,0,0">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="178" terrain="0,0,0,0">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="179" terrain="0,0,0,0">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="180" terrain="0,0,0,0">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="181" terrain="0,1,0,1">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="182" terrain="1,1,1,1"/>
+  <tile id="235">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="236">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="237">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="238" terrain="1,0,1,0">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="239" terrain="0,0,0,0">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="240" terrain="0,0,0,0">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="241" terrain="0,0,0,0">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="242" terrain="0,0,0,0">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="243" terrain="0,0,0,0">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="244" terrain="0,0,0,0">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="245" terrain="0,1,0,1">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="299">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="300">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="301">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="302" terrain="1,0,1,0">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="303" terrain="0,0,0,0">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="304" terrain="0,0,0,0">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="305" terrain="0,0,0,0">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="306" terrain="0,0,0,0">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="307" terrain="0,0,0,0">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="308" terrain="0,0,0,0">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="309" terrain="0,1,0,1">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="363">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="364">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="365">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="366" terrain="1,0,1,1">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="367" terrain="0,0,1,1">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="368" terrain="0,0,1,0">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="369" terrain="0,0,0,0">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="370" terrain="0,0,0,0">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="371" terrain="0,0,0,1">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="372" terrain="0,0,1,1">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="373" terrain="0,1,1,1">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="427">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="428">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="429">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="432" terrain="1,0,1,0">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="433" terrain="0,0,0,0">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="434" terrain="0,0,0,0">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="435" terrain="0,1,0,1">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="436" terrain="1,1,1,1"/>
+  <tile id="491">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="492">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="493">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="496" terrain="1,0,1,1">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="497" terrain="0,0,1,1">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="498" terrain="0,0,1,1">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="499" terrain="0,1,1,1">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1196">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1207">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1260">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1261">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1270">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1271">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1325">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1326">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1327">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1332">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1333">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1334">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1390">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1391">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1392">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1393">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1394">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1395">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1396">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1397">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="3073" name="objects" tilewidth="16" tileheight="16">
+  <image source="../tiles/objects.png" width="160" height="16"/>
+  <tile id="0">
+   <properties>
+    <property name="spawn" value="coin"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="spawn" value="player"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="portal" value="test2"/>
+    <property name="spawn" value="portal"/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="portal" value="test"/>
+    <property name="spawn" value="portal"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="Tile Layer 1" width="40" height="40">
+  <data encoding="base64" compression="zlib">
+   eJztVkt22kAQHG3s04CQEOBLOXwkgW/lDwrkVgYE2Mt0RdWhPRZ2skDxy9Oi3vy6R62e6poJA+dSQV+wcs59Dy6L8sq5veAgOApeBK9X7+3uJZZMEEo/gZ/0jw3E17+W7wkGgqFgJLi5fm/3KNi5qt2jFRTSX7sKl4ovlVgyQS6YCxaCu5r4kL8lW8T5IBgGl40NWEosBeIRrARrwY+a+J55vreCUsYLae8Y2yVjLCWWveAgOApeBK9nzhec64CDggHyRySCLvsjQV8QCWKOe1zvci3mHhHXdI+E/R73H9FuSD+Mb87kYsycoT4KV2FATk4FT0HFSYwj6c9c9T+wQd435MeMdlvBwVVcjvjvmO/he9wn5x7wmbhKN/ya1HyF/AfkEd9c0i9j3DnbnbTf2ComnJuwb+d1nBu/BTmkfqWxm9fwLuX/7Mg/3QPYe/zz+3Wwa/Zbds238f1tfMh/xFx1yKPeB1y4BM7Fd2/4tOL54u4Al5q4Pz6D1u0D74uQfNfxv47vmTU0Yf4QH2pO8+lzrmncsu7yoNLjkOdbMr4OuWj5qPF2qHURtatLjYsI5fHQ2KkOjjzfhJqomhrxex32h9QYPe+NyWdGbbP33ZprcVDpUErNg4ahTchpzEOrCurfLy2lDma0wxxyAr08cG4QnPiGs425n57vgfzbBidt0vvO5l61C/nXe1F1T/sl/bVV7bIamHMPuxe0cEyfsaviQnzI1aP7GvVr6zgz+oL7rGjgu59ptuUSuBOSB9CXJuKri9fX6d/xMX9owXm/Huruqz+9q+py4q/5vn7+UDeoB72z50F9TOdiqNv/b+Ksi9fyr6De6PtO34B9d3q3xZzXt16P2hVzrD6qcV3OKSJ3euvpWuzeaqK+HRN30l19P+M+zqk3BWs6pT5hHnc1uDmjzRO1aEo/6OaW/MU7b0k+p/TZ07ZkOzW+qMke63NDe3zvSN4teb6qY6pXqkuqg3XrJXlh33PqZ999Ordwb+3tntZGdVfffU3W6Ud8a9GiRYsWXxOu1ewWLf47/AT+CRMX
+  </data>
+ </layer>
+ <layer name="player" width="40" height="40">
+  <data encoding="base64" compression="zlib">
+   eJztwQENAAAAwqD3T20PBxQAAAAAAMCXARkAAAE=
+  </data>
+ </layer>
+ <layer name="objects" width="40" height="40">
+  <data encoding="base64" compression="zlib">
+   eJzt1FEKABAMAFDk0/3P6wJKIcR7/8s220KA+6RyOgNoi2Zzidk+jsav+D8zAO/Zudenb8gPtfbeze44AAB8owITbgCh
+  </data>
+ </layer>
+ <layer name="Foreground" width="40" height="40">
+  <properties>
+   <property name="foreground" value="true"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJzt1EEKgDAMRNHZpbfRm9mL6cW0nqHZCYG4qhThv00g0GZWIwEAgN2kw+bdP/32Zc+Mmu/uJF98m00A+KLrliKtZcxfb10XZR0X95tnq4PyAQAAAPiXDp5ZHNo=
+  </data>
+ </layer>
+ <layer name="Foreground2" width="40" height="40">
+  <properties>
+   <property name="foreground" value="true"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJztzrERABAABLAv7cJm7F+zgELhKJIJkgAAp2pJWnm92OvrNj7+AQAAANw2Aa+qAU8=
+  </data>
+ </layer>
+</map>
