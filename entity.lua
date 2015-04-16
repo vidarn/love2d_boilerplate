@@ -91,6 +91,8 @@ end
 
 function update_player(dt,id)
     local speed = 200.0
+    local ramp_time = 0.4
+    local stop_time = 0.2
     local jump  = 300.0
     local walking = false
     local input = get_input(1)
@@ -98,15 +100,25 @@ function update_player(dt,id)
     local player = game.players[id]
     local min_input = 0.4
     if input.left > min_input then
-        pos.vx = -speed*input.left
+        pos.vx = math.min(0,math.max(-speed,pos.vx - speed*dt/ramp_time))
         game.direction[id] = -1
         walking = true
     elseif input.right > min_input then
-        pos.vx = speed*input.right
+        pos.vx = math.max(0,math.min(speed,pos.vx + speed*dt/ramp_time))
         game.direction[id] = 1
         walking = true
     else
-        pos.vx = 0
+        local s = sign(pos.vx)
+        if s > 0 and pos.vx > 0 then
+            pos.vx = math.max(0,pos.vx - speed*dt/stop_time)
+            walking = true
+            game.direction[id] = 1
+        end
+        if s < 0 and pos.vx < 0 then
+            pos.vx = math.min(0,pos.vx + speed*dt/stop_time)
+            walking = true
+            game.direction[id] = -1
+        end
     end
 
     if input.jump > min_input then
